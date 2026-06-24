@@ -4,8 +4,10 @@ using UnityEngine;
 using Unity.Physics;
 using Unity.Burst;
 using Unity.Rendering;
+using JetBrains.Annotations;
+using System.Linq.Expressions;
 
-public struct InitializeCharacterFlag: IComponentData, IEnableableComponent  { }
+public struct InitializeCharacterFlag : IComponentData, IEnableableComponent { }
 
 public struct CharacterMoveDirection : IComponentData
 {
@@ -22,9 +24,25 @@ public struct FacingDirectionOverride : IComponentData
 {
     public float Value;
 }
+
+public struct CharacterMaxHitPoints : IComponentData
+{
+    public int Value;
+}
+
+public struct CharacterCurrentHitPoints : IComponentData
+{
+    public int Value;
+}
+
+public struct DamageThisFrame : IBufferElementData
+{
+    public int Value;
+}
 public class CharacterAuthoring : MonoBehaviour
 {
     public float MoveSpeed;
+    public int HitPoints;
     private class Baker : Baker<CharacterAuthoring>
     {
         public override void Bake(CharacterAuthoring authoring)
@@ -41,6 +59,21 @@ public class CharacterAuthoring : MonoBehaviour
             {
                 Value = 1f
             });
+
+            AddComponent(entity, new CharacterMaxHitPoints
+            {
+                Value = authoring.HitPoints
+            });
+
+            AddComponent(entity, new CharacterCurrentHitPoints
+            {
+                Value = authoring.HitPoints
+            });
+
+            AddBuffer<DamageThisFrame>(entity);
+            AddComponent<DestroyEntityFlag>(entity);
+            SetComponentEnabled<DestroyEntityFlag>(entity, false);
+
         }
     }
 }
@@ -51,7 +84,9 @@ public partial struct CharacterInitializationSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        foreach (var (mass, shouldInitialize) in SystemAPI.Query<RefRW<PhysicsMass>, EnabledRefRW<InitializeCharacterFlag>>())
+        foreach (var (mass, shouldInitialize) in SystemAPI.Query<
+            RefRW<PhysicsMass>,
+            EnabledRefRW<InitializeCharacterFlag>>())
         {
             mass.ValueRW.InverseInertia = float3.zero;
             shouldInitialize.ValueRW = false;
@@ -67,8 +102,8 @@ public partial struct CharacterMoveSystem : ISystem
         //var deltaTime = SystemAPI.Time.DeltaTime;
         foreach (var (velocity, facingDirection, direction, speed, entity) in SystemAPI.Query<
             RefRW<PhysicsVelocity>,
-            RefRW<FacingDirectionOverride>, 
-            CharacterMoveDirection, 
+            RefRW<FacingDirectionOverride>,
+            CharacterMoveDirection,
             CharacterMoveSpeed>()
             .WithEntityAccess())
         {
@@ -104,4 +139,32 @@ public partial struct GlobalTimeUpdateSystem : ISystem
         Shader.SetGlobalFloat(_globalTimeShaderPropertyID, (float)SystemAPI.Time.ElapsedTime);
     }
 
+}
+
+public partial struct ProcessDamageThisFrameSystem : ISystem
+{
+    [BurstCompile]
+    public void OnUpdate(ref SystemState state)
+    {
+        foreach (var (hitPoints, damageThisFrame, entity) in SystemAPI.Query<
+            RefRW<CharacterCurrentHitPoints>,
+            DynamicBuffer<DamageThisFrame>
+            >()
+            .WithPresent<DestroyEntityFlag>()
+            .WithEntityAccess()
+            )
+        {
+            if (damageThisFrame.IsEmpty) continue;
+            foreach (var damage in damageThisFrame)
+            {
+                hitPoints.ValueRW.Value -= damage.Value;
+            }
+            damageThisFrame.Clear();
+
+            if(hitPoints.ValueRO.Value <= 0)
+            {
+                SystemAPI.SetComponentEnabled<DestroyEntityFlag>(entity, true);
+            }
+        }
+    }
 }
