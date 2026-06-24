@@ -59,6 +59,15 @@ public enum ItemID
     MONEY = 1,
 }
 
+[Serializable]
+public enum PlayerAnimationIndex : byte
+{
+    Movement = 0,
+    Idle = 1,
+
+    none = byte.MaxValue
+}
+
 #endregion
 
 

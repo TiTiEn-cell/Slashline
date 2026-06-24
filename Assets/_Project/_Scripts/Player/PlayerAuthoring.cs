@@ -1,5 +1,6 @@
 using Unity.Entities;
 using Unity.Mathematics;
+using Unity.Rendering;
 using Unity.Transforms;
 using UnityEngine;
 
@@ -11,6 +12,12 @@ public struct CameraTarget : IComponentData
 
 public struct InitializeCameraTargetTag : IComponentData { }
 
+[MaterialProperty("_AnimationIndex")]
+public struct AnimationIndexOverride : IComponentData
+{
+    public float Value;
+}
+
 public class PlayerAuthoring : MonoBehaviour
 {
     private class Baker : Baker<PlayerAuthoring>
@@ -21,6 +28,7 @@ public class PlayerAuthoring : MonoBehaviour
             AddComponent<PlayerTag>(entity);
             AddComponent<InitializeCameraTargetTag>(entity);
             AddComponent<CameraTarget>(entity);
+            AddComponent<AnimationIndexOverride>(entity);
         }
     }
 }

@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 56f71f067411ed944afd1fe0c3da09af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -831381836282909041
+    second: Astronaut_Orange_0
+  - first:
+      213: 4123357704362004845
+    second: Astronaut_Orange_1
+  - first:
+      213: -9157789625129101090
+    second: Astronaut_Orange_2
+  - first:
+      213: -1471909653491288362
+    second: Astronaut_Orange_3
+  - first:
+      213: -3680356077494214641
+    second: Astronaut_Orange_4
+  - first:
+      213: 4087516072769566393
+    second: Astronaut_Orange_5
+  - first:
+      213: -806994189864033687
+    second: Astronaut_Orange_6
+  - first:
+      213: 3417059694494589325
+    second: Astronaut_Orange_7
+  - first:
+      213: 1418790801949048661
+    second: Astronaut_Orange_8
+  - first:
+      213: 1100085984457240662
+    second: Astronaut_Orange_9
+  - first:
+      213: -7016301466679999608
+    second: Astronaut_Orange_10
+  - first:
+      213: -2752346349146817847
+    second: Astronaut_Orange_11
+  - first:
+      213: 384877918241681668
+    second: Astronaut_Orange_12
+  - first:
+      213: 6510010339102198755
+    second: Astronaut_Orange_13
+  - first:
+      213: 4289002218158885200
+    second: Astronaut_Orange_14
+  - first:
+      213: 5098882555970510309
+    second: Astronaut_Orange_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Astronaut_Orange_0
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 999
+        width: 516
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e25afef965674f0800000000000000
+      internalID: -831381836282909041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_1
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 999
+        width: 516
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d611e525cfb193930800000000000000
+      internalID: 4123357704362004845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_2
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 999
+        width: 516
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed81c622bdef8e080800000000000000
+      internalID: -9157789625129101090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_3
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 999
+        width: 516
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6fe2af7f9b29be0800000000000000
+      internalID: -1471909653491288362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_4
+      rect:
+        serializedVersion: 2
+        x: 4281
+        y: 999
+        width: 516
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00e10a95afbcecc0800000000000000
+      internalID: -3680356077494214641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_5
+      rect:
+        serializedVersion: 2
+        x: 5281
+        y: 999
+        width: 516
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6312b2636c9b830800000000000000
+      internalID: 4087516072769566393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_6
+      rect:
+        serializedVersion: 2
+        x: 6281
+        y: 999
+        width: 516
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962a9595f0bfcc4f0800000000000000
+      internalID: -806994189864033687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_7
+      rect:
+        serializedVersion: 2
+        x: 7281
+        y: 999
+        width: 516
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81a7a210b5db6f20800000000000000
+      internalID: 3417059694494589325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_8
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 516
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fb3c0a7be80b310800000000000000
+      internalID: 1418790801949048661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_9
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 0
+        width: 516
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650b5f5df5a444f00800000000000000
+      internalID: 1100085984457240662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_10
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 0
+        width: 516
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8838c717df611ae90800000000000000
+      internalID: -7016301466679999608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_11
+      rect:
+        serializedVersion: 2
+        x: 3282
+        y: 0
+        width: 515
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cab248f393bdc9d0800000000000000
+      internalID: -2752346349146817847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_12
+      rect:
+        serializedVersion: 2
+        x: 4281
+        y: 0
+        width: 516
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401ffae6d6c575500800000000000000
+      internalID: 384877918241681668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_13
+      rect:
+        serializedVersion: 2
+        x: 5281
+        y: 0
+        width: 516
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb8e4279e3385a50800000000000000
+      internalID: 6510010339102198755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_14
+      rect:
+        serializedVersion: 2
+        x: 6281
+        y: 0
+        width: 516
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05909361bc8958b30800000000000000
+      internalID: 4289002218158885200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut_Orange_15
+      rect:
+        serializedVersion: 2
+        x: 7281
+        y: 0
+        width: 516
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edde0c6baed2c640800000000000000
+      internalID: 5098882555970510309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Astronaut_Orange_0: -831381836282909041
+      Astronaut_Orange_1: 4123357704362004845
+      Astronaut_Orange_10: -7016301466679999608
+      Astronaut_Orange_11: -2752346349146817847
+      Astronaut_Orange_12: 384877918241681668
+      Astronaut_Orange_13: 6510010339102198755
+      Astronaut_Orange_14: 4289002218158885200
+      Astronaut_Orange_15: 5098882555970510309
+      Astronaut_Orange_2: -9157789625129101090
+      Astronaut_Orange_3: -1471909653491288362
+      Astronaut_Orange_4: -3680356077494214641
+      Astronaut_Orange_5: 4087516072769566393
+      Astronaut_Orange_6: -806994189864033687
+      Astronaut_Orange_7: 3417059694494589325
+      Astronaut_Orange_8: 1418790801949048661
+      Astronaut_Orange_9: 1100085984457240662
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
